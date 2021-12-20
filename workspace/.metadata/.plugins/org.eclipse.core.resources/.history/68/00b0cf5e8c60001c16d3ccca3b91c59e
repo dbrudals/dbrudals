@@ -1,0 +1,5 @@
+package com.swh.project;
+
+public interface IReceive {
+	public void run() throws Exception;
+}

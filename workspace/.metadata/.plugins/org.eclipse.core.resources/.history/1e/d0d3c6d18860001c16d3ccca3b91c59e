@@ -1,0 +1,26 @@
+package com.swh.project;
+import java.io.File;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+
+public class YRead {
+	
+	private Ysr ysr;
+	
+	public YRead() throws Exception{
+		// TODO Auto-generated constructor stub
+		ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+		ysr = mapper.readValue(new File("src/main/resources/name.yml"), Ysr.class);
+	}
+
+	public A getSendC() throws Exception {
+		Class finedClass = Class.forName(ysr.getSend());
+		A ci = (A) finedClass.newInstance(); // 생성자 호출
+		return ci;
+	}
+	
+	public B getReceiveC() throws Exception {
+		Class finedClass = Class.forName(ysr.getReceive());
+	}
+}

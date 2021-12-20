@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.swh.DB.MariaDVSelect&apos; to &apos;MariaDBSelect&apos;&#x0D;&#x0A;- Original project: &apos;maven_project&apos;&#x0D;&#x0A;- Original element: &apos;com.swh.DB.MariaDVSelect&apos;&#x0D;&#x0A;- Renamed element: &apos;com.swh.DB.MariaDBSelect&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MariaDVSelect&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.swh.DB{MariaDVSelect.java[MariaDVSelect" matchStrategy="1" name="MariaDBSelect" qualified="false" references="true" similarDeclarations="false" stamp="1617517183877" textual="false" version="1.0"/>
+</session>

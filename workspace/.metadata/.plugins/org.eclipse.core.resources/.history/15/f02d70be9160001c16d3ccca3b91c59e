@@ -1,0 +1,2 @@
+send : com.swh.project.Publisher
+receive : com.swh.project.Receiver

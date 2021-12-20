@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete 3 elements from project &apos;dbexample&apos;&#x0D;&#x0A;- Original project: &apos;dbexample&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     dbexample/src/(default package)&#x0D;&#x0A;     MariaDBSelect.java&#x0D;&#x0A;     MariaDBTransaction.java" description="Delete elements" element1="/src&lt;" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1618115619083" subPackages="false" version="1.0"/>&#x0A;&#x0A;</session>

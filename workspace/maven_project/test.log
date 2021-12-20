@@ -1,0 +1,20 @@
+[2021-10-24 15:07:48,213] [FATAL] [    Main.java:13] - log4j:logger.fatal()
+[2021-10-24 15:07:48,217] [ERROR] [    Main.java:15] - log4j:logger.error()
+[2021-10-24 15:07:48,217] [WARN ] [    Main.java:17] - log4j:logger.warn()
+[2021-10-24 15:07:48,217] [INFO ] [    Main.java:19] - log4j:logger.info()
+[2021-10-24 15:07:48,218] [DEBUG] [    Main.java:21] - log4j:logger.debug()
+[2021-10-24 15:08:04,022] [FATAL] [    Main.java:13] - log4j:logger.fatal()
+[2021-10-24 15:08:04,027] [ERROR] [    Main.java:15] - log4j:logger.error()
+[2021-10-24 15:08:04,027] [WARN ] [    Main.java:17] - log4j:logger.warn()
+[2021-10-24 15:08:04,027] [INFO ] [    Main.java:19] - log4j:logger.info()
+[2021-10-24 15:08:04,028] [DEBUG] [    Main.java:21] - log4j:logger.debug()
+[15:29:18.208][FATAL][Main                     :   13] - FATAL
+[15:29:18.218][ERROR][Main                     :   14] - ERROR
+[15:29:18.218][WARN ][Main                     :   15] - WARN
+[15:29:18.218][INFO ][Main                     :   16] - INFO
+[15:29:18.218][DEBUG][Main                     :   17] - DEBUG
+[15:30:31.829][FATAL][Main                     :   13] - FATAL
+[15:30:31.833][ERROR][Main                     :   14] - ERROR
+[15:30:31.834][WARN ][Main                     :   15] - WARN
+[15:30:31.834][INFO ][Main                     :   16] - INFO
+[15:30:31.834][DEBUG][Main                     :   17] - DEBUG

@@ -1,0 +1,78 @@
+package com.swh.discordBot;
+
+import org.jboss.jandex.Main;
+
+import events.music.Music;
+import events.music.MusicSetup;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.entities.MessageChannel;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.managers.AudioManager;
+
+public class RolfCommand {
+
+    private MusicSetup setup;
+    private static Guild guild;
+    private MessageReceivedEvent event;
+
+    public RolfCommand(String[] input, MessageReceivedEvent event) {
+        getCommands(input, event);
+    }
+
+    public MessageReceivedEvent getEvent() {return event;}
+
+    public static Guild getGuild() {
+        return guild;
+    }
+
+    public MusicSetup getSetup() {
+        return setup;
+    }
+
+    public void getCommands(String[] input, MessageReceivedEvent event) {
+        guild = event.getGuild();
+
+        if (input[1].equals("help")) {
+            if (CommandListener.messageReceived >= 5) {
+                help(event);
+            } else {
+                event.getChannel().sendMessage("Häsch du Tomate uf de Auge? Obe stahts doch ganz genau..").queue();
+            }
+
+        }
+
+        if (input[1].equals("shutdown")) {
+
+            User user = event.getAuthor();
+            if (user.getIdLong() == 546052568619679744L) {
+                event.getChannel().sendMessage("Rolf geht schlafen.").queue();
+                Main m = new Main();
+                m.shutdown();
+            } else {
+                event.getChannel().sendMessage("Du hast keine Berechtigung um diesen Command").queue();
+            }
+            AudioManager manager = event.getGuild().getAudioManager();
+            manager.closeAudioConnection();
+        }
+
+        if (input[1].equalsIgnoreCase("music")) {
+            if (setup == null)
+                setup = new MusicSetup();
+
+            new Music(setup, event, input);
+        }
+
+        if (input[1].equalsIgnoreCase("disconnect")) {
+            disconnect(event.getChannel(), event.getGuild());
+        }
+    }
+
+    public void disconnect(MessageChannel channel, Guild guild) {
+        if (guild.getAudioManager().isConnected()) {
+            guild.getAudioManager().closeAudioConnection();
+            channel.sendMessage("Ich höre auf mit Singen.").queue();
+            setup = null;
+        }
+    }
+}

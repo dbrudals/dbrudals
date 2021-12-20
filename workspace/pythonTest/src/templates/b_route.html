@@ -1,0 +1,228 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>버스노선</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+<style type="text/css">
+ a.hover:link { color: #666B85; text-decoration: none; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1)}
+ a.hover:visited { color: #666B85; text-decoration: none;}
+ a.hover:hover { color: white; text-decoration: none;}
+
+</style>
+<style>
+body {
+  background-color: white;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+div.center{
+    //position: absolute;
+    margin: 0 auto;
+
+}
+
+.table-title h3 {
+   color: black;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 100%;
+  margin: auto;
+  padding:5px;
+  width: 900px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.small{
+    margin: auto;
+}
+
+th.main{
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+tr.hover{
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr.hover:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+tr.hover:hover a{
+  color:#FFFFFF;
+}
+
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:15px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:2px solid #9ea7af;
+  font-size:15px;
+  font-weight: 100;
+  padding:15px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.click a{
+    display: block;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="table-title">
+        <h3>{{ buscode }}</h3>
+    </div>
+    <div>
+    <table class="table-fill">
+        <tr colspan="1">
+            <th class="main">{{ start }} 방면</th>
+            <th class="main">{{ stat }} 방면</th>
+        </tr>
+        <tr colspan="2">
+            <td>
+        <table class="small">
+            <thead>
+                <tr class="title">
+                    <th class="text-left">정류장이름</th>
+                    <th class="text-left">현상황</th>
+                </tr>
+                {% for value in values1 %}
+                <tr  class="hover">
+                    <td class="text-left click"><a href="/station/{{ value.stationid }}" class="hover">{{ value.station }}</a></td>
+                    <td class="text-left click" ><a href="/station/{{ value.stationid }}" class="hover">{{ value.r }}</a></td>
+                </tr>
+                {% endfor %}
+        </table>
+                </td>
+            <td>
+            <table class="small">
+                <thead>
+                    <tr class="title">
+                        <th class="text-left">정류장이름</th>
+                        <th class="text-left">현상황</th>
+                    </tr>
+                    {% for value in values2 %}
+                    <tr  class="hover">
+                        <td class="text-left click"><a href="/station/{{ value.stationid }}" name="{{ value.name }}" class="hover">{{ value.station }}</a></td>
+                        <td class="text-left click" ><a href="/station/{{ value.stationid }}" class="hover">{{ value.r }}</a></td>
+                    </tr>
+                    {% endfor %}
+            </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>

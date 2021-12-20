@@ -1,0 +1,9 @@
+package com.swh.ykm;
+
+public class Jaso {
+	private String str;
+	private List<Character> list = ArrayList<Character>();
+	public static void main(String[] args) {
+		
+	}
+}

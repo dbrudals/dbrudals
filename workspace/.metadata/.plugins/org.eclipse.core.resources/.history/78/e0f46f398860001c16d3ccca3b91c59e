@@ -1,0 +1,40 @@
+package com.swh.project;
+
+import lombok.Data;
+
+@Data
+public class Director {
+	private A a;
+	private B b;
+	
+	public Director(A a) {
+		// TODO Auto-generated constructor stub
+		this.a = a;
+	}
+	
+	public Director(B b){
+		this.b = b;
+	}
+	
+	public boolean senderConstruct(String fileName){
+		try{
+		this.a.connect();
+		this.a.send(fileName);
+		this.a.close();
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
+	public boolean receiverConstruct(){
+		try{
+			this.b.run();
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+}

@@ -1,0 +1,21 @@
+package com.swh.ykm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Jaso {
+	
+	public static void main(String[] args) {
+		List<Character> list = new ArrayList<Character>();
+		String str = "안녕하세요";
+		for(int i =0; i<str.length(); i++){
+			list.add(str.charAt(i));
+		}
+		
+		for(int i=0; i<list.size(); i++){
+			char a = list.get(i);
+			System.out.format("0x%04X%n", (int)text.charAt(i));
+		}
+		
+	}
+}

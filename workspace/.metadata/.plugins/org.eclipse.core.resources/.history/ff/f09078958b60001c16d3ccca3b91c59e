@@ -1,0 +1,13 @@
+package com.swh.project;
+
+public class DirectorReceive {
+	private DirectorReceive b;
+	
+	public DirectorReceive(DirectorReceive b) {
+		// TODO Auto-generated constructor stub
+		this.b = b;
+	}
+	
+	
+
+}

@@ -1,0 +1,55 @@
+package com.swh.discordBot;
+
+import javax.security.auth.login.LoginException;
+
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import javax.security.auth.login.LoginException;
+
+public class Message extends ListenerAdapter {
+
+	public static void main(String[] args) throws LoginException {
+
+		// 기본 jda를 만들고
+		JDA jda = JDABuilder.createDefault("ODUxMDgxMTA2MTk5MDE5NTIw.YLzFDA.wNvTpCfWioce2_iv0OOPiNjeKVI").build();
+
+		// jda에 이벤트를 감지하는 리스너를 넣는다.
+		jda.addEventListener(new Message());
+
+	}
+
+	@Override
+	public void onMessageReceived(MessageReceivedEvent event) {
+
+		// 받은 메세지 내용이 !ping이라면
+		if (event.getMessage().getContentRaw().startsWith("!p")) {
+			// pong라는 내용을 보낸다.
+			String[] message = event.getMessage().getContentDisplay().split(" ");
+			System.out.println(message);
+			if (event.getMessage().getContentRaw().equals("!join")){
+				// Checks if there were any parameters passed in.
+				if(args.length == 0) {
+					// We need at least one -- our token!
+					System.out.println("Please provide a token!");
+					return;
+				}
+				String token = args[0]; // 0 based indexing.
+				try {
+					JDA jda = new JDABuilder(AccountType.BOT) // New bot builder.
+							.setToken(token) // Set the token.
+							.addEventListener(new Handler()) // Registers the event listener.
+							.buildBlocking(); // Block the current thread until JDA is 100% ready.
+					// Not required, but useful to demonstrate that everything worked.
+					System.out.println("Logged in as " + jda.getSelfUser().getName() + "#" + jda.getSelfUser().getDiscriminator() + "!");
+				} catch(LoginException | InterruptedException exception) {
+					// Print the error.
+					exception.printStackTrace();
+				}
+			}
+
+		}
+	}
+}
+

@@ -1,0 +1,5 @@
+package com.swh.project;
+
+public interface B {
+	public void run();
+}

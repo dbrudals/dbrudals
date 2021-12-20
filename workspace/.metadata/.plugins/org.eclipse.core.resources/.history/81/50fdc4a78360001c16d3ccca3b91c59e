@@ -1,0 +1,6 @@
+queue : 
+  send : com.swh.project.Publisher
+  receive : com.swh.project.Receiver
+tcp : 
+  send : com.swh.project.FileSendTcp
+  receive : com.swh.project.FileReceiveTcp

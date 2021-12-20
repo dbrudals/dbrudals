@@ -1,0 +1,10 @@
+package com.swh.project;
+
+import lombok.Data;
+
+@Data
+public class Yqt {
+	private Ysr queue;
+	private Ysr tcp;
+	
+}

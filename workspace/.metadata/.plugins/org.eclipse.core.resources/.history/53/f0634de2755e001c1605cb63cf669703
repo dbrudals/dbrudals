@@ -1,0 +1,18 @@
+package com.swh.ykm;
+
+import java.text.Normalizer;
+
+public class NormalizerExample {
+	
+	public static void main(String[] args) {
+		   String han = "한";
+	        printIt(han);
+
+	        String nfd = Normalizer.normalize(han, Normalizer.Form.NFD);
+	        printIt(nfd);
+
+	        String nfc = Normalizer.normalize(nfd, Normalizer.Form.NFC);
+	        printIt(nfc);
+	}
+
+}

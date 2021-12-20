@@ -1,0 +1,52 @@
+package com.swh.discordBot;
+
+import net.dv8tion.jda.api.entities.VoiceChannel;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.managers.AudioManager;
+
+public class Music {
+    MusicSetup setup;
+
+    public Music(MusicSetup setup, MessageReceivedEvent event, String[] input) {
+        this.setup = setup;
+        playMusic(event, input);
+    }
+
+    public void playMusic(MessageReceivedEvent event, String[] input) {
+        if (!event.getGuild().getAudioManager().isConnected()) {
+            VoiceChannel channelToConnect = event.getMember().getVoiceState().getChannel();
+            if (channelToConnect == null) {
+                event.getChannel().sendMessage("Du bisch ja gar nöd imene Voice-Channel! ").queue();
+                return;
+            } else {
+                AudioManager manager = event.getGuild().getAudioManager();
+                if (manager.isAttemptingToConnect()) {
+                    event.getChannel().sendMessage("Ich bin scho am verbinde. Ruhig Bluet!").queue();
+                    return;
+                }
+                manager.openAudioConnection(channelToConnect);
+                if(manager.isConnected())
+                System.out.println("Connected to " + manager.getConnectedChannel().getName());
+            }
+        }
+        if (input[2].equalsIgnoreCase("gitarre")) {
+            playGuitar(event);
+        } else {
+            anyMusic(event.getMessage().getContentRaw().split(" ")[2], event);
+        }
+
+    }
+
+
+    public void playGuitar(MessageReceivedEvent event) {
+        setup.getGuildMusicManager(event.getGuild()).player.setVolume(60);
+        setup.loadAndPlay(event.getTextChannel(), "https://www.youtube.com/watch?v=itVxWqJ0IyM&ab_channel=AlanGogoll");
+    }
+
+    public void anyMusic(String URL, MessageReceivedEvent event) {
+        setup.getGuildMusicManager(event.getGuild()).player.setVolume(60);
+        setup.loadAndPlay(event.getTextChannel(), URL);
+    }
+
+
+}

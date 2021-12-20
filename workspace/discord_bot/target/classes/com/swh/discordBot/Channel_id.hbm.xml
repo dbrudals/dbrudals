@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019. 8. 18 ???? 3:10:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="com.swh.discordBot.Channel_id" table="channel_id">
+		<id name="usern" type="java.lang.Long">
+			<column name="USERN" unique="true" />
+
+		</id>
+		<property name="channel_id" type="java.lang.Long">
+			<column name="CHANNEL_ID" unique="true" />
+		</property>
+	</class>
+
+</hibernate-mapping>

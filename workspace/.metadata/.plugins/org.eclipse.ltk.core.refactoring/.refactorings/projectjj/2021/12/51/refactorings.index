@@ -1,0 +1,6 @@
+1639284546442	Move source folder
+1639284793464	Rename package 'com.swh.rabbitmq.project'
+1639289608755	Rename type 'FileSender'
+1639290095843	Rename type 'FileReceiver'
+1639290510071	Rename type 'FileReceiveServerTCP'
+1639291583951	Delete element

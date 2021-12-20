@@ -1,0 +1,18 @@
+package com.swh.project;
+
+public class Singleton {
+	private static YRead yr = null;
+
+	private Singleton(){}
+
+	public static Singleton getInstance() {
+		if(yr == null) {
+			yr = new YRead();
+		}
+		return yr;
+	}
+
+	public void print(String input) {
+		System.out.println(input);
+	}
+}

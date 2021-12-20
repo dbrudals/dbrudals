@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019. 8. 18 ???? 3:10:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="main.Schedule" table="schedule">
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="usern" type="java.lang.String">
+			<column name="USERN" />
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<property name="date_time" type="java.lang.String">
+			<column name="DATE_TIME" />
+		</property>
+		<property name="content" type="java.lang.String">
+			<column name="CONTENT" />
+		</property>
+		<property name="tts" type="java.lang.Integer">
+			<column name="TTS" />
+		</property>
+		<property name="chk" type="java.lang.Integer">
+			<column name="CHK" />
+		</property>
+
+	</class>
+	<class name="main.Channel_id" table="channel_id">
+		<id name="channel_id" type="java.lang.Long">
+			<column name="channel_id" />
+			<generator class="assigned" />
+		</id>
+	</class>
+
+</hibernate-mapping>

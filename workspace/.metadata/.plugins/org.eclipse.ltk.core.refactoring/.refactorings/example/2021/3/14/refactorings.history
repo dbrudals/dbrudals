@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 packages to &apos;ykm/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;example&apos;&#x0D;&#x0A;- Destination element: &apos;ykm/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     example/src/com.swh.design.factory&#x0D;&#x0A;     example/src/com.swh.scatchbook&#x0D;&#x0A;     example/src/com.swh.design.singleton&#x0D;&#x0A;     example/src/com.swh.nudle&#x0D;&#x0A;- Update references to refactored element" description="Move packages" destination="=ykm/src\/main\/java" element1="/src&lt;com.swh.design.factory" element2="/src&lt;com.swh.scatchbook" element3="/src&lt;com.swh.design.singleton" element4="/src&lt;com.swh.nudle" flags="589830" fragments="4" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1617001501991" version="1.0"/>
+</session>

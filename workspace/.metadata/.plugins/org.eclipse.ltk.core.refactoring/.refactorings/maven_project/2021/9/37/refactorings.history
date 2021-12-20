@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Singleton.java&apos; to &apos;discord/src/main/java/com.swh.discordBot&apos;&#x0D;&#x0A;- Original project: &apos;maven_project&apos;&#x0D;&#x0A;- Destination element: &apos;discord/src/main/java/com.swh.discordBot&apos;&#x0D;&#x0A;- Original element: &apos;com.swh.design.singleton.Singleton.java&apos;" description="Copy compilation unit" destination="=discord/src\/main\/java&lt;com.swh.discordBot" element1="/src\/main\/java&lt;com.swh.design.singleton{Singleton.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1630821857775" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,25 @@
+package com.swh.project;
+
+import lombok.Data;
+
+@Data
+public class SendDirector {
+	private ISend a;
+	
+	public SendDirector(ISend a) {
+		// TODO Auto-generated constructor stub
+		this.a = a;
+	}
+
+	public boolean senderConstruct(String fileName){
+		try{
+		this.a.connect();
+		this.a.send(fileName);
+		this.a.close();
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+}

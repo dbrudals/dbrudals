@@ -1,0 +1,26 @@
+package com.swh.ykm;
+
+import java.text.Normalizer;
+
+public class NormalizerExample {
+	
+    private static void printIt(String string) {
+        for (int i = 0; i < string.length(); i++) {
+            System.out.print(String.format("U+%04X ", string.codePointAt(i)));
+        }
+        System.out.println(String);
+    }
+
+
+	public static void main(String[] args) {
+		String han = "한";
+
+		String nfd = Normalizer.normalize(han, Normalizer.Form.NFD);
+		printIt(nfd);
+
+		String nfc = Normalizer.normalize(nfd, Normalizer.Form.NFC);
+		printIt(nfc);
+
+	}
+
+}

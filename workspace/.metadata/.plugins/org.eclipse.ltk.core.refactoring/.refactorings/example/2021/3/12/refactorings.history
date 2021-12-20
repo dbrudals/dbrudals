@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;example.free&apos; to &apos;Free&apos;&#x0D;&#x0A;- Original project: &apos;example&apos;&#x0D;&#x0A;- Original element: &apos;example.free&apos;&#x0D;&#x0A;- Renamed element: &apos;example.Free&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;free&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;example{free.java[free" matchStrategy="1" name="Free" qualified="false" references="true" similarDeclarations="false" stamp="1616241475382" textual="false" version="1.0"/>
+</session>

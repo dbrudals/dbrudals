@@ -1,0 +1,22 @@
+package com.swh.project;
+
+public class Director {
+	private A a;
+	
+	public Director(A a) {
+		// TODO Auto-generated constructor stub
+		this.a = a;
+	}
+	
+	public boolean senderConstruct(String fileName){
+		try{
+		this.a.connect();
+		this.a.send(fileName);
+		this.a.close();
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+}

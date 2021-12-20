@@ -1,0 +1,7 @@
+package com.swh.ykm;
+
+import java.text.Normalizer;
+
+public class NormalizerExample {
+
+}

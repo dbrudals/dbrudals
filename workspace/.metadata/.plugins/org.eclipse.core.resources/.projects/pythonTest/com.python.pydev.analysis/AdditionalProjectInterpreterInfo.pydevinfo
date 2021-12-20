@@ -1,0 +1,106 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\ykm09\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\pythonTest\com.python.pydev.analysis\v2_indexcache
+A|1621680120531565000|C:\Users\ykm09\workspace\pythonTest\src\A.py
+bus|1617542138229494000|C:\Users\ykm09\workspace\pythonTest\src\bus.py
+folderclient|1618719032359521000|C:\Users\ykm09\workspace\pythonTest\src\folderclient.py
+musicQuiz|1636201941706011000|C:\Users\ykm09\workspace\pythonTest\src\musicQuiz.py
+folderserver|1618719032373482000|C:\Users\ykm09\workspace\pythonTest\src\folderserver.py
+Database|1617542622833279000|C:\Users\ykm09\workspace\pythonTest\src\Database.py
+drawTcpClient|1610856059466302000|C:\Users\ykm09\workspace\pythonTest\src\drawTcpClient.py
+english|1611810292086525000|C:\Users\ykm09\workspace\pythonTest\src\english.py
+discordVote|1627187089533570000|C:\Users\ykm09\workspace\pythonTest\src\discordVote.py
+englishQ|1611904559719740000|C:\Users\ykm09\workspace\pythonTest\src\englishQ.py
+NaverMovieRankFlask|1618124307610621000|C:\Users\ykm09\workspace\pythonTest\src\NaverMovieRankFlask.py
+drawTcpServer|1610278233751296000|C:\Users\ykm09\workspace\pythonTest\src\drawTcpServer.py
+-- END DISKCACHE
+-- START DICTIONARY
+30
+2=A
+10=bus
+27=B
+5=C:\Users\ykm09\workspace\pythonTest\src\NaverMovieRankFlask.py
+11=C:\Users\ykm09\workspace\pythonTest\src\english.py
+3=C:\Users\ykm09\workspace\pythonTest\src\englishQ.py
+26=Main.__init__
+4=englishQ
+17=C:\Users\ykm09\workspace\pythonTest\src\drawTcpServer.py
+9=C:\Users\ykm09\workspace\pythonTest\src\bus.py
+1=C:\Users\ykm09\workspace\pythonTest\src\A.py
+12=english
+20=Database
+6=NaverMovieRankFlask
+18=drawTcpServer
+21=C:\Users\ykm09\workspace\pythonTest\src\folderclient.py
+22=folderclient
+29=Main.mouseReleaseEvent
+24=musicQuiz
+13=C:\Users\ykm09\workspace\pythonTest\src\discordVote.py
+15=C:\Users\ykm09\workspace\pythonTest\src\folderserver.py
+28=Main.mousePressEvent
+7=C:\Users\ykm09\workspace\pythonTest\src\drawTcpClient.py
+19=C:\Users\ykm09\workspace\pythonTest\src\Database.py
+16=folderserver
+8=drawTcpClient
+14=discordVote
+23=C:\Users\ykm09\workspace\pythonTest\src\musicQuiz.py
+30=Database.__init__
+25=Main
+-- END DICTIONARY
+-- START TREE 1
+35
+B|1|B!1^7#7*17@
+a|2|a!1^13#1*19@a!3^25#5*35@
+app|3|app!5^5#1*51@App!7^70#1*67@app!9^5#1*83@
+b|3|b!1^16#1*19@b!3^11#1*35@b!11^35#1*99@
+bot|1|bot!13^9#1*115@
+c|2|c!3^14#1*35@c!11^12#1*99@
+con|2|connList!15^6#1*131@connList!17^4#1*147@
+d|1|d!1^17#1*19@
+dat|1|Database!19^3#7*161@
+def|1|default_components!13^37#1*115@
+dif|1|Diff!21^21#5*178@
+ger|2|gerund!11^9#1*99@gerund!3^7#1*35@
+hel|1|hello!5^8#5*50@
+hom|1|home!9^24#5*82@
+htt|1|http!13^38#1*115@
+int|1|intro!9^20#5*82@
+lin|1|link!23^13#1*195@
+mai|1|Main!7^9#7*65@
+no|1|no!3^9#1*35@
+on_|3|on_ready!13^42#11*114@on_socket_response!13^63#11*114@on_message!13^47#11*114@
+q|2|q!23^20#1*195@q!11^36#1*99@
+r|2|r!3^10#1*35@r!11^34#1*99@
+ran|1|ranking!5^12#5*50@
+rou|1|route!9^37#5*82@
+run|3|run!21^24#5*178@run_server!17^17#5*146@run_server!15^22#5*130@
+sea|1|search!21^7#5*178@
+she|6|sheet2!11^29#1*99@sheet6!11^56#1*99@sheet4!11^42#1*99@sheet3!11^38#1*99@sheet1!11^22#1*99@sheet5!11^52#1*99@
+sta|1|stationTiem!9^69#5*82@
+tit|1|title!23^18#1*195@
+to|2|to!3^8#1*35@to!11^10#1*99@
+win|1|window!7^71#1*67@
+wor|3|worker!21^15#5*178@worker!15^9#5*130@worker!17^7#5*146@
+wri|1|write_wb!11^19#1*99@
+x|1|x!3^12#1*35@
+z|1|z!23^24#5*195@
+-- END TREE
+-- START TREE 2
+16
+__i|2|__init__!25&7^10#9*66@__init__!20&19^4#9*162@
+all|1|all!26&7^17#9*67@
+che|1|check!27&1^8#9*18@
+cli|3|clicked!26&7^18#9*67@clicked!28&7^26#13*67@clicked!29&7^31#9*67@
+clo|1|close!20&19^61#9*162@
+con|1|conn!30&19^9#9*163@
+dat|1|dataDel!20&19^30#9*162@
+dba|1|dbAdd!20&19^11#9*162@
+mou|3|mouseReleaseEvent!25&7^29#9*66@mousePressEvent!25&7^24#9*66@mouseMoveEvent!25&7^34#9*66@
+pai|1|paintEvent!25&7^39#9*66@
+run|1|run!25&7^50#9*66@
+s|1|s!26&7^19#9*67@
+sea|1|search!20&19^51#9*162@
+sen|1|send!25&7^46#9*66@
+tab|2|tableCheck!20&19^17#9*162@tableCreate!20&19^36#9*162@
+wor|1|worker!25&7^54#9*66@
+-- END TREE

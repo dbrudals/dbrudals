@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+ a:link { color: #0566A3; text-decoration: none;}
+ a:visited { color: #0566A3; text-decoration: none;}
+ a:hover { color: #0566A3; text-decoration: underline;}
+
+body { background: #fff; }
+.blueone {
+  border-collapse: collapse;
+}
+.blueone th {
+  padding: 10px;
+  color: #E89EBA;
+  border-bottom: 3px solid #E89EBA;
+  text-align: left;
+}
+.blueone td {
+  color: #1B8BB8;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.blueone td:hover {
+  background: #DCEBF1;
+  color: #0566A3;
+}
+caption {
+  font-size: 200%;
+  color: #292C47;
+  }
+table{
+	margin : auto;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>MOVIE RANKING</title>
+    </head>
+    <body>
+  <table class="blueone">
+    <caption>MOVIE RANK</caption>
+    <tr><th>순위</th><th style="text-align: center;">영화제목</th>
+      {% for value in values %}
+      <tr><td>{{ value.rank }}위</td><td style="text-align: center;" ><a href={{ value.link }} target="_blank">{{ value.name }}</a></td></tr>
+      {% endfor %}
+  </table>
+    </body>
+</html>

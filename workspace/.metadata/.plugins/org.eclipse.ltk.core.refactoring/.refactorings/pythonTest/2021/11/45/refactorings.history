@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;englishQ.py&apos; to &apos;englishQ.py&apos;&#x0D;&#x0A;- Original project: &apos;pythonTest&apos;&#x0D;&#x0A;- Destination element: &apos;englishQ.py&apos;&#x0D;&#x0A;- Original element: &apos;englishQ.py&apos;" description="Copy file" element1="src/englishQ.py" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1636201420504" target="/pythonTest/src/englishQ.py" units="0" version="1.0"/>
+</session>
