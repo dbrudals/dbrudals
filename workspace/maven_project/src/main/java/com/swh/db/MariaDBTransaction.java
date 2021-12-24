@@ -20,10 +20,10 @@ import java.sql.SQLException;
 public class MariaDBTransaction {
 
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://dev-swh.gq:3306/k_min?serverTimezone=UTC";
+	static final String DB_URL = "";
 	
 	static final String USERNAME = "root";
-	static final String PASSWORD = "swhacademy!";
+	static final String PASSWORD = "";
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		Connection connection = null;
